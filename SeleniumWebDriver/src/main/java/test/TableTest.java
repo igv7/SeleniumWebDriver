@@ -38,6 +38,11 @@ public class TableTest {
         System.out.println(table.getValueFromCell(4, "Company"));
         System.out.println(table.getValueFromCell(1, "Country"));
         System.out.println(table.getValueFromCell(2, "Contact"));
+        
+        System.out.println();
+        System.out.println(table.getHeadings().get(0).getText());
+        System.out.println(table.getRowsWithColumns().get(1).size());
+        System.out.println(table.getRowsWithColumnsByHeadings().size());
 
 
 //        driver.quit();
