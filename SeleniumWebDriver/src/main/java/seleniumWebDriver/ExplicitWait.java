@@ -1,4 +1,4 @@
-package test;
+package seleniumWebDriver;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -39,7 +39,7 @@ public class ExplicitWait {
         
         
         inputName("‪Igor", "Gamazov‬");
-        selectOption("‪Русский‬", "‪English (United States)‬");
+        selectOption("‪Ру�?�?кий‬", "‪English (United States)‬");
 
     }
 	

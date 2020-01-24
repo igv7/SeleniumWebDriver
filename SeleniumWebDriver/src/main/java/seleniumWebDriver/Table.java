@@ -1,4 +1,4 @@
-package test;
+package seleniumWebDriver;
 
 import java.util.ArrayList;
 import java.util.HashMap;

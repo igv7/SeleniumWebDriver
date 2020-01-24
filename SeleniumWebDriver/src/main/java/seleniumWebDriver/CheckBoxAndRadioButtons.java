@@ -1,4 +1,4 @@
-package test;
+package seleniumWebDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -25,7 +25,7 @@ public class CheckBoxAndRadioButtons {
 		
 		driver.get("https://market.yandex.ru/");
 
-        driver.findElement(By.xpath("//a/span[text()='Бытовая техника']")).click();
+        driver.findElement(By.xpath("//a/span[text()='Бытова�? техника']")).click();
 //      driver.findElement(By.xpath("/html/body/div[2]/div[2]/span/div[2]/noindex/div[2]/div/div/div[1]/div[4]/a/span")).click();
      
         driver.findElement(By.xpath("//a[text()='Стиральные машины']")).click();
@@ -59,7 +59,7 @@ public class CheckBoxAndRadioButtons {
         System.out.println(driver.findElement(By.xpath("//span[text()='Самовывоз']/ancestor::label/div/preceding-sibling::input"))
         		.isSelected());
         
-        driver.findElement(By.xpath("//span[text()='С доставкой']/ancestor::label/div")).click();
+        driver.findElement(By.xpath("//span[text()='С до�?тавкой']/ancestor::label/div")).click();
     
 //        driver.quit();
     }

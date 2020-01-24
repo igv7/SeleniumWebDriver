@@ -1,18 +1,25 @@
-package test;
+package seleniumWebDriver;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class SimulateKeyboardKeys {
+public class TakingScreenshots {
 	
 	static WebDriver driver;
 	static String projectPath = "C:\\Users\\Igor\\eclipse-workspace\\SeleniumWebDriver\\";
-
+	
 	public static void main(String[] args) {
 		
 //		WebDriverManager.firefoxdriver().setup();
@@ -36,51 +43,27 @@ public class SimulateKeyboardKeys {
         String select = Keys.chord(Keys.CONTROL, "a");
         String cut = Keys.chord(Keys.CONTROL, "x");
         String paste = Keys.chord(Keys.CONTROL, "v");
-        String shift = Keys.chord(Keys.SHIFT);
-        String delete = Keys.chord(Keys.DELETE);
-        
 
-        searchInput.sendKeys(shift, "test");
-			        try {
-						Thread.sleep(3000);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-        searchInput.sendKeys(select, delete);
-			        try {
-						Thread.sleep(3000);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
         searchInput.sendKeys("test text");
-			        try {
-						Thread.sleep(3000);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
         searchInput.sendKeys(select);
-			        try {
-						Thread.sleep(3000);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
         searchInput.sendKeys(cut);
-			        try {
-						Thread.sleep(3000);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
         searchInput.sendKeys(paste);
-			        try {
-						Thread.sleep(3000);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
         searchInput.sendKeys(Keys.ENTER);
+
+        Date dateNow = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("hh_mm_ss");
+        String fileName = format.format(dateNow) + ".png";
+
+        File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        try {
+//        	FileUtils.copyFile(screenshot, new File("C:\\Screenshots\\" + fileName));
+            FileUtils.copyFile(screenshot, new File("C:\\Screenshots\\" + "Testing_" + fileName));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
 //        driver.quit();
-
 	}
 
 }

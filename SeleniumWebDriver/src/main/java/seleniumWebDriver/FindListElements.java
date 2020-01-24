@@ -1,4 +1,4 @@
-package test;
+package seleniumWebDriver;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -27,7 +27,7 @@ public class FindListElements {
 		
 		driver.get("http://market.yandex.ru/");
 
-        driver.findElement(By.xpath("//a/span[text()='Бытовая техника']")).click();
+        driver.findElement(By.xpath("//a/span[text()='Бытова�? техника']")).click();
         driver.findElement(By.xpath("//a[text()='Стиральные машины']")).click();
 
         //Select all checkBoxes on a page

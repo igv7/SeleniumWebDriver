@@ -1,4 +1,4 @@
-package test;
+package seleniumWebDriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -46,13 +46,13 @@ public class BrowserWindows {
 //		driver.get("http://signup.live.com");
 //        String mainTab = driver.getWindowHandle();
 
-//        driver.findElement(By.xpath("//a[text()='соглашения об использовании служб Майкрософт']")).click();
+//        driver.findElement(By.xpath("//a[text()='�?оглашени�? об и�?пользовании �?лужб Майкро�?офт']")).click();
 
 //        for (String tab : driver.getWindowHandles()){
 //            driver.switchTo().window(tab);
 //        }
 
-//        driver.findElement(By.xpath("(//span[text()='Часто задаваемые вопросы']/parent::a)[2]")).click();
+//        driver.findElement(By.xpath("(//span[text()='Ча�?то задаваемые вопро�?ы']/parent::a)[2]")).click();
 
 //        driver.switchTo().window(mainTab);
 

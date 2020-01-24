@@ -1,4 +1,4 @@
-package test;
+package seleniumWebDriver;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -30,10 +30,10 @@ public class FindListElements2 {
 		
 		//Go to kamaze.co.il
 		driver.get("https://www.kamaze.co.il");
-		//Find and click on a 'להשוואת מחירי חבילות סלולר'
-		driver.findElement(By.xpath("//a[text()='להשוואת מחירי חבילות סלולר']")).click();
-		//Find and click on a 'הוסף / הורד מסלולים'
-		driver.findElement(By.xpath("//span[text()='הוסף / הורד מסלולים']")).click();
+		//Find and click on a 'להשוו�?ת מחירי חבילות סלולר'
+		driver.findElement(By.xpath("//a[text()='להשוו�?ת מחירי חבילות סלולר']")).click();
+		//Find and click on a 'הוסף / הורד מסלולי�?'
+		driver.findElement(By.xpath("//span[text()='הוסף / הורד מסלולי�?']")).click();
 		//Find and click on a check box 'עד 25 ג'יגה'
 //		driver.findElement(By.xpath("//i/parent::span[text()=\"עד 25 ג'יגה\"]/parent::div[@class='reg_options_container_items_holder']")).click();
 		
@@ -50,18 +50,18 @@ public class FindListElements2 {
 		}
 		System.out.println(optionXpath.size());
 		
-		//Click on a 'הוסף / הורד מסלולים'
-//		driver.findElement(By.xpath("//span[text()='הוסף / הורד מסלולים']")).click();
+		//Click on a 'הוסף / הורד מסלולי�?'
+//		driver.findElement(By.xpath("//span[text()='הוסף / הורד מסלולי�?']")).click();
 		
 //		selectOption();
-//		selectOption("הוסף / הורד מסלולים", "מבצעים מובילים");
-//        selectOption("ללא הגבלה", "הוסף / הורד מסלולים");
+//		selectOption("הוסף / הורד מסלולי�?", "מבצעי�? מובילי�?");
+//        selectOption("לל�? הגבלה", "הוסף / הורד מסלולי�?");
 		
 	}
 
 	
 //	public static void selectOption(){
-//		String listXpath = String.format("//span[text()='הוסף / הורד מסלולים']");
+//		String listXpath = String.format("//span[text()='הוסף / הורד מסלולי�?']");
 //		List<WebElement>optionXpath = driver.findElements(By.xpath("//div[@class='reg_options_container active']/div[@class='reg_options_container_items_holder']/span"));
 //		driver.findElement(By.xpath(listXpath)).click();
 //		optionXpath.get(1).click();
