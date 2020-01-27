@@ -1,4 +1,4 @@
-package pageObject;
+package pageObjectAndJUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +16,8 @@ public class SignUpPage {
     private By emailField = By.xpath(".//*[@id='user_email']");
     private By passwordField = By.xpath(".//*[@id='user_password']");
     private By signUpButton = By.xpath(".//*[@id='signup_button']");
-    private By mainError = By.xpath(".//*[@id='user_login']/ancestor::dl/preceding-sibling::div[contains(@class, 'flash-error')]");
+//    private By mainError = By.xpath(".//*[@id='user_login']/ancestor::dl/preceding-sibling::div[contains(@class, 'flash-error')]");
+    private By mainError = By.xpath(".//div[@class='flash flash-error my-3']");
     private By userNameError = By.xpath("//input[@id='user_login']/ancestor::dd/following-sibling::dd");
     private By emailError = By.xpath(".//*[@id='user_email']/ancestor::dd/following-sibling::dd");
     private By passwordError = By.xpath(".//*[@id='user_password']/ancestor::dd/following-sibling::dd");

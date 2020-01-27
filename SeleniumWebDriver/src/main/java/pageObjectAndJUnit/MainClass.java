@@ -1,4 +1,4 @@
-package pageObject;
+package pageObjectAndJUnit;
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,5 +27,6 @@ public class MainClass {
         MainPage mainPage = PageFactory.initElements(driver, MainPage.class);
 
         mainPage.register("testusername", "qweqew@cxcv.com", "qweqwe2SDD33");
+        mainPage.clickSignUpFormButton();
     }
 }

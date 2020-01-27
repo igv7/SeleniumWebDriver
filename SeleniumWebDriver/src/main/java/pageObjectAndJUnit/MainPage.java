@@ -1,4 +1,4 @@
-package pageObject;
+package pageObjectAndJUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,9 +11,10 @@ public class MainPage {
         this.driver = driver;
     }
 
-    @FindBy(xpath = "//a[text()='Sign in']")
+    @FindBy(xpath = "//a[@class='HeaderMenu-link no-underline mr-3']")
     private WebElement signInButton;
 
+//    @FindBy(xpath = "//a[@class='HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1']")
     @FindBy(xpath = "//a[text()='Sign up']")
     private WebElement signUpButton;
     
