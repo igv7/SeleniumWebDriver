@@ -11,16 +11,18 @@ public class SignUpPage {
         this.driver = driver;
     }
 
-    private By heading = By.xpath("//div[@class='setup-wrapper']//h1");
+    private By heading = By.xpath("//div[@class='mb-4 mb-md-8 container-md']//h1");
     private By userNameField = By.xpath(".//*[@id='user_login']");
     private By emailField = By.xpath(".//*[@id='user_email']");
     private By passwordField = By.xpath(".//*[@id='user_password']");
     private By signUpButton = By.xpath(".//*[@id='signup_button']");
 //    private By mainError = By.xpath(".//*[@id='user_login']/ancestor::dl/preceding-sibling::div[contains(@class, 'flash-error')]");
     private By mainError = By.xpath(".//div[@class='flash flash-error my-3']");
-    private By userNameError = By.xpath("//input[@id='user_login']/ancestor::dd/following-sibling::dd");
+//    private By userNameError = By.xpath("//input[@id='user_login']/ancestor::dd/following-sibling::dd");
+    private By userNameError = By.xpath("//div[@class='mb-1 ']");
     private By emailError = By.xpath(".//*[@id='user_email']/ancestor::dd/following-sibling::dd");
-    private By passwordError = By.xpath(".//*[@id='user_password']/ancestor::dd/following-sibling::dd");
+//    private By passwordError = By.xpath(".//*[@id='user_password']/ancestor::dd/following-sibling::dd");
+    private By passwordError = By.xpath(".//p[@class='note mb-3']");
 
     public SignUpPage typeUserName(String username){
         driver.findElement(userNameField).sendKeys(username);

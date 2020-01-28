@@ -29,7 +29,7 @@ class MainPageTest {
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get("http://github.com");
+        driver.get("https://github.com");
 //        mainPage = new MainPage(driver);
         mainPage = PageFactory.initElements(driver, MainPage.class);
     }
